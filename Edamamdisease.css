@@ -1,0 +1,159 @@
+header{
+    display: flex;
+    background-color: #ccd5ae;
+    width: 100%;
+    height: 100px;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.logo{
+    font-family: 'Arial', 'sans-serif';
+    font-size: 24px;
+    font-weight: bold;
+    text-decoration: none;
+    color: black;
+    margin-left: 20px;
+}
+.Msearch{
+    background-color: #f2f9dc;
+    margin-right: 20px;
+    color: black;
+    padding: 10px 15px;
+    border:2px solid #d7ff54;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+    text-decoration: none;
+}
+.Msearch:hover{
+    background-color: #cec09f;
+}
+body{
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ align-items: center;
+ background-color: #f2f9dc;
+}
+#recipeResults{
+    background-color: #f2f9dc;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.recipe-card{
+    margin: 2px;
+    margin-top: 10px;
+    width: 300px;
+    background-color: #f2ffc7;
+    border-radius: 10px;
+    padding: 4px;
+    border: 2px solid black;
+}
+.recipe-card img{
+    border-radius: 10px;
+}
+.RseacrhSection{
+    background-color: #cec09f;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 200px;
+    position: sticky;
+    top: 0px;
+}
+.RseacrhSection button{
+    background-color: #f2f9dc;
+    color: black;
+    padding: 5px 5px;
+    border:2px solid #d7ff54;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+.DiseasesSection{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+.right{
+    border: 2px solid #e0f69a;
+    width: 25%;
+    height: 200px;
+    border-left: none;
+}
+.left{
+    border: 2px solid #e0f69a;
+    width: 49%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    height: 200px;
+}
+.left button{
+    width: 200px;
+}
+.achieved{
+    border: 2px solid #e0f69a;
+    border-left: none;
+    width: 25%;
+    height: 200px;
+}
+#selectt{
+    font-size: 20px;
+}
+.recipe-checkbox {
+    /* Custom checkbox design */
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-color: #eee;
+    border: 1px solid #ccc;
+    cursor: pointer;
+  }
+  .recipe-checkbox:checked {
+    background-color: #f2ffc7;
+  }
+  .selected-card {
+    background-color: #e7ff98; /* Change to desired color */
+  }
+
+@media only screen and (max-width: 700px) {
+    .left{
+        
+        width: 49%;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        font-size: small;
+        height: 200px;
+        font-size: 0.7em;
+    }
+    .left button{
+        width: 120px;
+        font-size: 10px;
+    }
+    .left h1{
+        margin-bottom: 0%;
+    }
+    .achieved,.right{
+        height: 200px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .RseacrhSection{
+        height: 200px;
+        font-size: 0.7em;
+    }
+}

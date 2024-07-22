@@ -1,0 +1,258 @@
+html {
+    scroll-behavior: smooth;
+}
+
+
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+
+header {
+    background-color: #ccd5ae;
+    color: #fff;
+    padding: 15px;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#bgcolor{
+    background-color: #f2f9dc !important;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+}
+
+.nav-list {
+    list-style: none;
+    margin: 10px;
+    padding: 0;
+    display: flex;
+}
+
+nav li {
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: grey;
+}
+
+.hamburger-menu {
+    font-size: 24px;
+    cursor: pointer;
+    display: none; /* Hide by default on larger screens */
+}
+
+/* Add your styles here or customize as needed */
+
+#dummySection {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 400px;
+    background-color: #f2f9dc;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    z-index: 1000; /* Ensure it's above other elements */
+    border:3px solid #ddf68a;
+}
+
+
+.input-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+}
+
+button {
+    background-color: #ccd5ae;
+    color: black;
+    padding: 10px 15px;
+    border:2px solid #d7ff54;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #cbc5b7;
+}
+
+#result {
+    margin-top: 20px;
+    font-size: 16px;
+    font-weight: bold;
+}
+.visible {
+    display: block !important; /* Use !important to override other styles if needed */
+}
+/* Your existing CSS */
+/* Add your styles here or customize as needed */
+.dropdown {
+    position: relative;
+}
+
+.dropdown-menu {
+    display: none;
+    text-align: left;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #ccd5ae;
+    list-style: none;
+    padding: 10px;
+    margin-top: 0px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    white-space: nowrap; /* Prevent text wrapping */
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+
+#result a{
+    background-color: #ccd5ae;
+    padding: 10px;
+    border: 2px solid black;
+    border-radius: 6px;
+}
+#result p{
+    margin-bottom: 10px;
+}
+
+.gender{
+    display: flex;
+    flex-direction: row;
+}
+.gender input{
+    margin-left: 5px;
+
+
+
+}
+
+.list-items {
+    margin-left: 100px; /* Adjust margin as needed */
+}
+
+#servicee{
+    background-color: #f2f9dc;
+}
+hr{
+    border: 2px solid #ccd5ae;
+}
+footer{
+    background-color: #ccd5ae;
+}
+/* ... */
+
+
+@media only screen and (max-width: 768px) {
+    .nav-list {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        background-color: #ccd5ae;
+        text-align: center;
+        z-index: 1; /* Ensure it's above other elements */
+    }
+
+    #dummySection {
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 80%; /* Adjust the width as needed */
+        max-width: 100%; /* Ensure it takes full width on small screens */
+        background-color: #fff;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        padding: 20px;
+        text-align: center;
+        z-index: 1000; /* Ensure it's above other elements */
+    }
+
+    .nav-list.show {
+        display: flex;
+    }
+
+    .nav-list li {
+        margin: 0;
+        padding: 15px;
+        border-bottom: 1px solid #555; /* Optional: Add a border between items */
+    }
+
+    .hamburger-menu {
+        display: block;
+        color: black;
+    }
+
+    .dropdown {
+        position: static; /* Override dropdown position */
+    }
+
+    .dropdown-menu {
+        position: static; /* Override dropdown position */
+        display: none;
+        width: 100%; /* Full width on mobile */
+        background-color: #ccd5ae;
+    }
+
+    .nav-list.show {
+        display: flex; /* Ensure nav list is visible after clicking the hamburger */
+    }
+
+    .dropdown:hover .dropdown-menu {
+        display: block; /* Show dropdown on hover on mobile */
+    }
+    .list-items {
+        margin-left: 30px; /* Adjust margin as needed */
+    }
+}

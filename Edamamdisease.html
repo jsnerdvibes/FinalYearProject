@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Edamamdisease.css">
+    <title>Recipe Search</title>
+</head>
+
+<body>
+    <header>
+        <div><a href="/" class="logo">NUTRIPHILIA</a></div>
+        <div><a href="diet.html" class="Msearch">Manual Search</a></div>
+    </header>
+    <div class="RseacrhSection">
+        <div class="left">
+            <h1>Recipe Search</h1>
+            <div class="DiseasesSection">
+                <label for="normalSearch"><input type="radio" name="diet" id="normalSearch" value="balanced">
+                    Normal Search</label>
+                <label for="highFiber"><input type="radio" name="diet" id="highFiber" value="high-fiber">
+                Constipation</label>
+                <label for="highProtein"><input type="radio" name="diet" id="highProtein" value="high-protein">
+                Tuberculosis</label>
+                <label for="lowCarb"><input type="radio" name="diet" id="lowCarb" value="low-carb">
+                Weight Loss</label>
+                <label for="lowFat"><input type="radio" name="diet" id="lowFat" value="low-fat">
+                Heart Diseases</label>
+                <label for="lowSodium"><input type="radio" name="diet" id="lowSodium" value="low-sodium">
+                Hypertension</label>
+                <label for="lowSugar"> <input type="radio" name="diet" id="lowSugar" value="low-sugar">
+                Diabetes</label>
+            </div>
+            <button id="dietSearchButton">Search by Diet</button>
+        </div>
+        <div class="right">
+            <h2>Target</h2>
+        </div>
+        <div class="achieved">
+            <h2>Achieved</h2>
+            <p>Protein : </p>
+            <p>Carbs : </p>
+            <p>Fats : </p>
+        </div>
+    </div>
+    <div id="recipeResults"></div>
+    <script src="Edamamdisease.js">
+        
+    </script>
+</body>
+
+</html>
